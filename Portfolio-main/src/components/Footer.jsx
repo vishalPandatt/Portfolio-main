@@ -12,7 +12,7 @@ export default function Footer() {
       >
         {/* Left Side */}
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <h2 className="text-lg text-purple-400 font-semibold">Sumit Chandra</h2>
+          <h2 className="text-lg text-purple-400 font-semibold">Vishal Vashishth</h2>
           <p className="text-sm">© {new Date().getFullYear()} All Rights Reserved.</p>
         </div>
 
@@ -26,13 +26,13 @@ export default function Footer() {
 
         {/* Right - Social Icons */}
         <div className="flex gap-5 mt-4 md:mt-0 text-xl">
-          <a href="https://github.com/Sumit123chandra" target="_blank" className="hover:text-purple-400 transition">
+          <a href="https://github.com/vishalPandatt" target="_blank" className="hover:text-purple-400 transition">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/sumit-chandra-925014258" target="_blank" className="hover:text-purple-400 transition">
+          <a href="https://www.linkedin.com/in/vishal-vashishth-b4920337b/" target="_blank" className="hover:text-purple-400 transition">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/" target="_blank" className="hover:text-purple-400 transition">
+          <a href="https://x.com/Vishal_VP_" target="_blank" className="hover:text-purple-400 transition">
             <FaTwitter />
           </a>
         </div>

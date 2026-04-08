@@ -184,7 +184,7 @@ export default function App() {
       {/* 🎯 Extra Info */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300 text-center">
         <div className="p-4 bg-gray-700/40 rounded-xl">
-          🎓 <span className="font-semibold text-purple-300">B.Tech CSE</span>
+          🎓 <span className="font-semibold text-purple-300">MCA (Integrated)</span>
           <p className="text-sm mt-1">Computer Science Engineering</p>
         </div>
         <div className="p-4 bg-gray-700/40 rounded-xl">
@@ -224,7 +224,7 @@ export default function App() {
 
     <div className="space-y-8">
       
-      {/* 🏢 Internship 1 */}
+      {/* 🏢 Internship 1
       <motion.div
         className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-purple-500/40 transition"
         initial={{ opacity: 0, y: 50 }}
@@ -240,25 +240,7 @@ export default function App() {
           <li>Built responsive designs and integrated Firebase backend for a news site</li>
           <li>Worked with mentors to improve full-stack development skills</li>
         </ul>
-      </motion.div>
-
-      {/* 🏢 Internship 2 */}
-      <motion.div
-        className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-purple-500/40 transition"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <h3 className="text-2xl font-semibold text-purple-300">
-          Web Development Intern – Cantilever.in
-        </h3>
-        <p className="text-gray-300 mt-2">June 2025 – July 2025</p>
-        <ul className="text-gray-400 mt-3 list-disc list-inside">
-          <li>Developed <span className="text-purple-400 font-medium">BlogSite</span> – a fully functional blogging platform with CRUD features & authentication</li>
-          <li>Built <span className="text-purple-400 font-medium">Task Manager</span> – a productivity tool with task sorting, filtering & JWT authentication</li>
-          <li>Enhanced expertise in <span className="text-purple-400 font-medium">React, Node.js, MongoDB, Express</span> by working on real-world projects</li>
-        </ul>
-      </motion.div>
+      </motion.div> */}
 
     </div>
   </div>

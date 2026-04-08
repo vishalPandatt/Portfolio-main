@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-purple-400 cursor-pointer">
-          Sumit<span className="text-white"> Chandra</span>
+          Vishal<span className="text-white"> Vashishth</span>
         </h1>
 
         {/* Desktop Menu */}

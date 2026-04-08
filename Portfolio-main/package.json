@@ -1,7 +1,9 @@
 {
-  "name": "my-portfolio",
+  "name": "vishal-portfolio",
   "private": true,
   "version": "0.0.0",
+  "description": "Portfolio website of Vishal Vashishth built with React, Tailwind CSS, and Vite.",
+  "author": "Vishal Vashishth",
   "type": "module",
   "scripts": {
     "dev": "vite",

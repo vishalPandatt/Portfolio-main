@@ -2,20 +2,29 @@ import { motion } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { Typewriter } from "react-simple-typewriter";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub,
+  FaPython, FaJava, FaBootstrap, FaJira, FaDocker,
+  FaLinkedin, FaTwitter, FaCode, FaMousePointer
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss, SiNextdotjs, SiMongodb, SiMysql, SiCplusplus,
+  SiC, SiFastapi, SiPostman, SiRender, SiVercel, SiNetlify,
+  SiCloudflare, SiRedux
+} from "react-icons/si";
+
 import portfolioimg from "./assets/portfolioimg.jpg";
-import blogsiteImg from "./assets/projects/blogsite.png";
+import portImg from "./assets/projects/portImg.png";
 import ecommerceImg from "./assets/projects/ecommerce.png";
 import taskManagerImg from "./assets/projects/taskmanager.png";
 import newsImg from "./assets/projects/news.png";
-import resuMindImg from "./assets/projects/resumind.png"
-import roastMyWebsiteImg from "./assets/projects/roastMyWebsiteImg.png"
+import resuMindImg from "./assets/projects/resumind.png";
+import roastMyWebsiteImg from "./assets/projects/roastMyWebsiteImg.png";
 
-import {FaLinkedin, FaTwitter } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { SiMysql, SiCplusplus } from "react-icons/si";
 import { Parallax } from "react-parallax";
 
 export default function App() {
@@ -210,7 +219,7 @@ export default function App() {
   </div>
 </section>
 
-💼 Experience Section
+{/* 💼 Experience Section */}
 <section id="experience" className="relative z-10 py-20 px-6 md:px-20 bg-gray-800">
   <div className="max-w-6xl mx-auto text-center">
     <motion.h2
@@ -296,17 +305,32 @@ export default function App() {
     {/* 🛠 Skills Grid */}
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
       {[
-        { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
-        { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-        { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
-        { name: "React", icon: <FaReact className="text-blue-400" /> },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="text-sky-400" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
-        { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
-        { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },   // ✅ Added SQL
-        { name: "C++", icon: <SiCplusplus className="text-indigo-500" /> }, // ✅ Added C++
+  { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+  { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+  { name: "React", icon: <FaReact className="text-blue-400" /> },
+  { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+  { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+  { name: "C++", icon: <SiCplusplus className="text-indigo-500" /> },
+  { name: "Python", icon: <FaPython className="text-yellow-300" /> },
+  { name: "C", icon: <SiC className="text-blue-400" /> },
+  { name: "Java", icon: <FaJava className="text-red-500" /> },
+  { name: "FastAPI", icon: <SiFastapi className="text-green-400" /> },
+  { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
+  { name: "Jira", icon: <FaJira className="text-blue-500" /> },
+  { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+  { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
+  { name: "Render", icon: <SiRender className="text-white" /> },
+  { name: "Vercel", icon: <SiVercel className="text-white" /> },
+  { name: "Netlify", icon: <SiNetlify className="text-green-400" /> },
+  { name: "Cloudflare", icon: <SiCloudflare className="text-orange-400" /> },
+  { name: "Redux Toolkit", icon: <SiRedux className="text-purple-400" /> },
+  { name: "VS Code", icon: <FaCode className="text-blue-500" /> },
+  { name: "Cursor", icon: <FaMousePointer className="text-white" /> },
       ].map((skill, index) => (
         <motion.div
           key={index}
@@ -356,12 +380,12 @@ export default function App() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {[
           {
-            title: "BlogSite",
-            img: blogsiteImg,
-            desc: "A fully functional blog platform with authentication and CRUD features.",
-            tech: ["React", "Next.js", "Node.js", "MongoDB","Express.js","JWT"],
-            github: "https://github.com/vishalPandatt",
-            live: "https://blog-site-silk-nine.vercel.app/"
+            title: "Portfolio",
+            img: portImg,
+            desc: "A clean and responsive portfolio website showcasing my projects, skills, and journey as a developer.",
+            tech: ["HTML", "CSS", "JavaScript"],
+            github: "https://github.com/vishalPandatt/VISHAL-PORTFOLIO.git",
+            live: "https://vishallpandat.netlify.app/"
           },
           {
             title: "E-Commerce App",
@@ -492,7 +516,7 @@ export default function App() {
       <p className="text-gray-300 text-lg">
         📧 Email:{" "}
         <a
-          href="vishal112vp@gmail.com?subject=Hello Vishal&body=I saw your portfolio and..."
+          href="mailto:vishal112vp@gmail.com?subject=Hello Vishal&body=I saw your portfolio and..."
           className="text-purple-400 hover:underline"
         >
           vishal112vp@gmail.com

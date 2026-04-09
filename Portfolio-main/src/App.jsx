@@ -77,7 +77,7 @@ export default function App() {
     >
       Hi, I’m 
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-500 animate-pulse">
-        {" "}Vishal Vashishth 
+        {" "}Vishal Vashishth
       </span>
     </motion.h1>
 
@@ -92,7 +92,7 @@ export default function App() {
       <span className="text-pink-400 font-semibold"> functional websites</span> with passion and precision.
     </motion.p>
 
-    {/* ✅ Typing Effect */}
+    {/* ✅ Typing Effects */}
     <motion.div
       className="mt-4 text-xl md:text-2xl text-purple-300"
       initial={{ opacity: 0 }}

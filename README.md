@@ -15,14 +15,7 @@ This repository contains the source code for the personal portfolio website of V
 - Framer Motion
 - React Icons
 
-## Usage
-
-```bash
-npm install
-npm run dev
-```
-
-Open the browser at `http://localhost:5173` to preview the portfolio.
+Open the browser at `https://vishalvashishth.netlify.app/` to preview the portfolio.
 
 ## Author
 
